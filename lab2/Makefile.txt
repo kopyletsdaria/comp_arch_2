@@ -1,0 +1,27 @@
+CXX = g++
+CXXFLAGS = -std=c++11 -Wall
+TARGET = calculator_app
+LIB = libcalculator.a
+SRC_MAIN = main.cpp
+SRC_LIB = calculator.cpp
+OBJ_MAIN = main.o
+OBJ_LIB = calculator.o
+
+all: $(TARGET)
+
+$(TARGET): $(OBJ_MAIN) $(LIB)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJ_MAIN) -L. -lcalculator
+
+$(LIB): $(OBJ_LIB)
+	ar rcs $(LIB) $(OBJ_LIB)
+
+$(OBJ_LIB): $(SRC_LIB) calculator.h
+	$(CXX) $(CXXFLAGS) -c $(SRC_LIB) -o $(OBJ_LIB)
+
+$(OBJ_MAIN): $(SRC_MAIN) calculator.h
+	$(CXX) $(CXXFLAGS) -c $(SRC_MAIN) -o $(OBJ_MAIN)
+
+clean:
+	rm -f $(TARGET) $(LIB) $(OBJ_MAIN) $(OBJ_LIB)
+
+.PHONY: all clean
