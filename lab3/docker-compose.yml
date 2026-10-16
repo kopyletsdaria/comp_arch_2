@@ -1,0 +1,18 @@
+services:
+  lab3-arm-env:
+    image: ubuntu:24.04
+    platform: linux/amd64
+    container_name: lab3_Kopylets
+    tty: true
+    stdin_open: true
+    privileged: true
+    environment:
+      - DEBIAN_FRONTEND=noninteractive
+    volumes:
+      - .:/project
+      - work:/work
+    working_dir: /project
+    command: ["sleep", "infinity"]
+
+volumes:
+  work:
