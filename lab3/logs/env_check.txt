@@ -1,0 +1,14 @@
+== host gcc ==
+gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0
+== arm-eabi-gcc ==
+arm-eabi-gcc (GNU Toolchain for the A-profile Architecture 8.3-2019.03 (arm-rel-8.36)) 8.3.0
+== arm-linux-gnueabihf-gcc ==
+arm-linux-gnueabihf-gcc (GNU Toolchain for the A-profile Architecture 8.3-2019.03 (arm-rel-8.36)) 8.3.0
+== qemu ==
+QEMU emulator version 4.2.1 (Debian 1:4.2-3ubuntu6.30)
+== U-Boot ==
+f79afa722b9 HEAD
+== Linux kernel ==
+a67e7cdde grafted, HEAD -> linux-4.19.y, tag: v4.19.325, origin/linux-4.19.y
+== BusyBox ==
+bd75474 grafted, HEAD -> 1_31_stable, tag: 1_31_1, origin/1_31_stable

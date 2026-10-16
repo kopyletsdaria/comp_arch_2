@@ -1,0 +1,22 @@
+== U-Boot ==
+ls: cannot access '/work/src/u-boot/MLO': No such file or directory
+ls: cannot access '/work/src/u-boot/u-boot.img': No such file or directory
+== Kernel ==
+-rw-r--r-- 1 root root  35K Oct 16 11:00 /work/src/linux-stable/arch/arm/boot/dts/am335x-boneblack.dtb
+-rwxr-xr-x 1 root root 8.6M Oct 16 11:08 /work/src/linux-stable/arch/arm/boot/zImage
+== BusyBox ==
+/work/src/busybox/_install/bin/busybox: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-armhf.so.3, for GNU/Linux 3.2.0, stripped
+ 0x00000001 (NEEDED)                     Shared library: [libm.so.6]
+ 0x00000001 (NEEDED)                     Shared library: [libresolv.so.2]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so.6]
+== Модулі ядра у rootfs ==
+4.19.325
+== Вміст /boot у rootfs ==
+total 14M
+-rw-r--r-- 1 root root 4.5M Oct 16 11:08 System.map
+-rw-r--r-- 1 root root  35K Oct 16 11:08 am335x-boneblack.dtb
+-rw-r--r-- 1 root root 192K Oct 16 11:08 config
+-rwxr-xr-x 1 root root 8.6M Oct 16 11:08 zImage
+== Розмір rootfs ==
+60M	/work/src/busybox/_install
+-rw-r--r-- 1 root root 25M Oct 16 11:08 /work/src/busybox/rootfs.cpio.gz

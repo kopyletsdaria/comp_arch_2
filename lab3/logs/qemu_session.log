@@ -1,0 +1,268 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.19.325 (root@41d92444eba6) (gcc version 8.3.0 (GNU Toolchain for the A-profile Architecture 8.3-2019.03 (arm-rel-8.36))) #1 SMP Fri Oct 16 11:00:24 UTC 2026
+[    0.000000] CPU: ARMv7 Processor [412fc0f1] revision 1 (ARMv7), cr=10c5387d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, PIPT instruction cache
+[    0.000000] OF: fdt: Machine model: linux,dummy-virt
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: UEFI not found.
+[    0.000000] cma: Reserved 64 MiB at 0x5c000000
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv0.2 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] percpu: Embedded 16 pages/cpu s36748 r8192 d20596 u65536
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 130048
+[    0.000000] Kernel command line: root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Memory: 405356K/524288K available (12288K kernel code, 1618K rwdata, 4796K rodata, 2048K init, 394K bss, 53396K reserved, 65536K cma-reserved, 0K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xe0800000 - 0xff800000   ( 496 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xe0000000   ( 512 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0x(ptrval) - 0x(ptrval)   (13280 kB)
+[    0.000000]       .init : 0x(ptrval) - 0x(ptrval)   (2048 kB)
+[    0.000000]       .data : 0x(ptrval) - 0x(ptrval)   (1619 kB)
+[    0.000000]        .bss : 0x(ptrval) - 0x(ptrval)   ( 395 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=16 to nr_cpu_ids=1.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000132] sched_clock: 56 bits at 62MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.000232] Switching to timer-based delay loop, resolution 16ns
+[    0.006319] Console: colour dummy device 80x30
+[    0.007905] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=625000)
+[    0.008076] CPU: Testing write buffer coherency: ok
+[    0.012303] CPU0: Spectre v2: firmware did not set auxiliary control register IBE bit, system vulnerable
+[    0.012431] CPU0: Spectre BHB: enabling loop workaround for all CPUs
+[    0.012517] pid_max: default: 32768 minimum: 301
+[    0.015480] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.015523] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.032285] /cpus/cpu@0 missing clock-frequency property
+[    0.032537] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.037026] Setting up static identity map for 0x40300000 - 0x403000a0
+[    0.038702] rcu: Hierarchical SRCU implementation.
+[    0.041595] EFI services will not be available.
+[    0.042939] smp: Bringing up secondary CPUs ...
+[    0.043075] smp: Brought up 1 node, 1 CPU
+[    0.043135] SMP: Total of 1 processors activated (125.00 BogoMIPS).
+[    0.043184] CPU: All CPU(s) started in SVC mode.
+[    0.074682] devtmpfs: initialized
+[    0.082308] VFP support v0.3: implementor 41 architecture 4 part 30 variant f rev 0
+[    0.095777] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.096440] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.104143] pinctrl core: initialized pinctrl subsystem
+[    0.117245] DMI not present or invalid.
+[    0.124381] NET: Registered protocol family 16
+[    0.145288] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.149407] cpuidle: using governor menu
+[    0.150048] No ATAGs?
+[    0.151340] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.151405] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.154501] Serial: AMBA PL011 UART driver
+[    0.178372] OF: /pcie@10000000: could not get #msi-cells for /intc@8000000/v2m@8020000
+[    0.181170] 9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 54, base_baud = 0) is a PL011 rev1
+[    0.194833] console [ttyAMA0] enabled
+[    0.236762] vgaarb: loaded
+[    0.239068] SCSI subsystem initialized
+[    0.240971] usbcore: registered new interface driver usbfs
+[    0.241478] usbcore: registered new interface driver hub
+[    0.241856] usbcore: registered new device driver usb
+[    0.245319] pps_core: LinuxPPS API ver. 1 registered
+[    0.245567] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.245982] PTP clock support registered
+[    0.246684] EDAC MC: Ver: 3.0.0
+[    0.262817] clocksource: Switched to clocksource arch_sys_counter
+[    0.361464] NET: Registered protocol family 2
+[    0.363061] IP idents hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.366376] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes)
+[    0.366687] TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.366951] TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.367270] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.368633] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.370879] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.372186] NET: Registered protocol family 1
+[    0.374538] RPC: Registered named UNIX socket transport module.
+[    0.374757] RPC: Registered udp transport module.
+[    0.374889] RPC: Registered tcp transport module.
+[    0.375008] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.379131] Trying to unpack rootfs image as initramfs...
+[    1.754115] Freeing initrd memory: 25140K
+[    1.765289] Initialise system trusted keyrings
+[    1.768161] workingset: timestamp_bits=30 max_order=17 bucket_order=0
+[    1.781922] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.785126] NFS: Registering the id_resolver key type
+[    1.785635] Key type id_resolver registered
+[    1.785801] Key type id_legacy registered
+[    1.786544] ntfs: driver 2.1.32 [Flags: R/O].
+[    1.796046] Key type asymmetric registered
+[    1.796301] Asymmetric key parser 'x509' registered
+[    1.797092] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+[    1.797451] io scheduler noop registered
+[    1.797600] io scheduler deadline registered
+[    1.798139] io scheduler cfq registered (default)
+[    1.798317] io scheduler mq-deadline registered
+[    1.798452] io scheduler kyber registered
+[    1.814878] pl061_gpio 9030000.pl061: PL061 GPIO chip @0x09030000 registered
+[    1.820722] pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+[    1.821457] pci-host-generic 4010000000.pcie:    IO 0x3eff0000..0x3effffff -> 0x00000000
+[    1.822535] pci-host-generic 4010000000.pcie:   MEM 0x10000000..0x3efeffff -> 0x10000000
+[    1.822787] pci-host-generic 4010000000.pcie:   MEM 0x8000000000..0xffffffffff -> 0x8000000000
+[    1.823895] pci-host-generic 4010000000.pcie: can't claim ECAM area [mem 0x10000000-0x1fffffff]: address conflict with pcie@10000000 [mem 0x10000000-0x3efeffff]
+[    1.825094] pci-host-generic: probe of 4010000000.pcie failed with error -16
+[    1.897710] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    1.903530] SuperH (H)SCI(F) driver initialized
+[    1.904954] msm_serial: driver initialized
+[    1.905277] STMicroelectronics ASC driver initialized
+[    1.906402] STM32 USART driver initialized
+[    1.934641] brd: module loaded
+[    1.947470] loop: module loaded
+[    1.961087] CAN device driver interface
+[    1.962436] bgmac_bcma: Broadcom 47xx GBit MAC driver loaded
+[    1.963688] e1000e: Intel(R) PRO/1000 Network Driver - 3.2.6-k
+[    1.963880] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    1.964200] igb: Intel(R) Gigabit Ethernet Network Driver - version 5.4.0-k
+[    1.964360] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    1.968724] pegasus: v0.9.3 (2013/04/25), Pegasus/Pegasus II USB Ethernet driver
+[    1.969038] usbcore: registered new interface driver pegasus
+[    1.969248] usbcore: registered new interface driver asix
+[    1.969421] usbcore: registered new interface driver ax88179_178a
+[    1.969595] usbcore: registered new interface driver cdc_ether
+[    1.969828] usbcore: registered new interface driver smsc75xx
+[    1.970050] usbcore: registered new interface driver smsc95xx
+[    1.970245] usbcore: registered new interface driver net1080
+[    1.970413] usbcore: registered new interface driver cdc_subset
+[    1.970654] usbcore: registered new interface driver zaurus
+[    1.970850] usbcore: registered new interface driver cdc_ncm
+[    1.973882] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.974126] ehci-pci: EHCI PCI platform driver
+[    1.974376] ehci-platform: EHCI generic platform driver
+[    1.974782] ehci-omap: OMAP-EHCI Host Controller driver
+[    1.975079] ehci-orion: EHCI orion driver
+[    1.975351] SPEAr-ehci: EHCI SPEAr driver
+[    1.975581] ehci-st: EHCI STMicroelectronics driver
+[    1.975921] ehci-exynos: EHCI EXYNOS driver
+[    1.976230] ehci-atmel: EHCI Atmel driver
+[    1.976490] tegra-ehci: Tegra EHCI driver
+[    1.976794] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.977111] ohci-pci: OHCI PCI platform driver
+[    1.977354] ohci-platform: OHCI generic platform driver
+[    1.977694] SPEAr-ohci: OHCI SPEAr driver
+[    1.977973] ohci-st: OHCI STMicroelectronics driver
+[    1.978245] ohci-atmel: OHCI Atmel driver
+[    1.979312] usbcore: registered new interface driver usb-storage
+[    1.979989] usbcore: registered new interface driver usbserial_generic
+[    1.980359] usbserial: USB Serial support registered for generic
+[    1.980691] usbcore: registered new interface driver ftdi_sio
+[    1.980971] usbserial: USB Serial support registered for FTDI USB Serial Device
+[    1.981244] usbcore: registered new interface driver pl2303
+[    1.981434] usbserial: USB Serial support registered for pl2303
+[    1.982197] usbcore: registered new interface driver usb_serial_simple
+[    1.982437] usbserial: USB Serial support registered for carelink
+[    1.982650] usbserial: USB Serial support registered for flashloader
+[    1.982843] usbserial: USB Serial support registered for funsoft
+[    1.983024] usbserial: USB Serial support registered for google
+[    1.983212] usbserial: USB Serial support registered for hp4x
+[    1.983422] usbserial: USB Serial support registered for kaufmann
+[    1.983594] usbserial: USB Serial support registered for libtransistor
+[    1.983768] usbserial: USB Serial support registered for moto_modem
+[    1.983942] usbserial: USB Serial support registered for motorola_tetra
+[    1.984120] usbserial: USB Serial support registered for nokia
+[    1.984288] usbserial: USB Serial support registered for novatel_gps
+[    1.984511] usbserial: USB Serial support registered for siemens_mpi
+[    1.984816] usbserial: USB Serial support registered for suunto
+[    1.984974] usbserial: USB Serial support registered for vivopay
+[    1.985138] usbserial: USB Serial support registered for zio
+[    1.996543] rtc-pl031 9010000.pl031: rtc core: registered pl031 as rtc0
+[    1.999372] i2c /dev entries driver
+[    2.010695] sdhci: Secure Digital Host Controller Interface driver
+[    2.010892] sdhci: Copyright(c) Pierre Ossman
+[    2.012879] Synopsys Designware Multimedia Card Interface Driver
+[    2.014975] sdhci-pltfm: SDHCI platform and OF driver helper
+[    2.018383] ledtrig-cpu: registered to indicate activity on CPUs
+[    2.020010] usbcore: registered new interface driver usbhid
+[    2.020234] usbhid: USB HID core driver
+[    2.027150] NET: Registered protocol family 10
+[    2.034018] Segment Routing with IPv6
+[    2.034453] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    2.037640] NET: Registered protocol family 17
+[    2.038337] can: controller area network core (rev 20170425 abi 9)
+[    2.038899] NET: Registered protocol family 29
+[    2.039064] can: raw protocol (rev 20170425)
+[    2.039344] can: broadcast manager protocol (rev 20170425 t)
+[    2.039639] can: netlink gateway (rev 20170425) max_hops=1
+[    2.040905] Key type dns_resolver registered
+[    2.041497] ThumbEE CPU extension supported.
+[    2.042009] Registering SWP/SWPB emulation handler
+[    2.044058] Loading compiled-in X.509 certificates
+[    2.054126] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    2.059106] rtc-pl031 9010000.pl031: setting system clock to 2026-10-16 11:25:11 UTC (1792149911)
+[    2.068487] uart-pl011 9000000.pl011: no DMA platform data
+[    2.168303] Freeing unused kernel memory: 2048K
+[    2.174439] Run /init as init process
+
+Please press Enter to activate this console. 
+/ # uname -a
+Linux (none) 4.19.325 #1 SMP Fri Oct 16 11:00:24 UTC 2026 armv7l GNU/Linux
+/ # ls -l
+total 0
+drwxr-xr-x    2 root     root             0 Oct 16 11:08 [1;34mbin[m
+drwxr-xr-x    2 root     root             0 Oct 16 11:08 [1;34mboot[m
+drwxr-xr-x    3 root     root             0 Oct 16 11:25 [1;34mdev[m
+drwxr-xr-x    3 root     root             0 Oct 16 11:08 [1;34metc[m
+lrwxrwxrwx    1 root     root            11 Oct 16 11:08 [1;36minit[m -> [1;32mbin/busybox[m
+drwxr-xr-x    3 root     root             0 Oct 16 11:08 [1;34mlib[m
+lrwxrwxrwx    1 root     root            11 Oct 16 11:08 [1;36mlinuxrc[m -> [1;32mbin/busybox[m
+dr-xr-xr-x   91 root     root             0 Jan  1  1970 [1;34mproc[m
+drwxr-xr-x    2 root     root             0 Oct 16 11:08 [1;34mroot[m
+drwxr-xr-x    2 root     root             0 Oct 16 11:08 [1;34msbin[m
+dr-xr-xr-x   12 root     root             0 Oct 16 11:25 [1;34msys[m
+drwxr-xr-x    2 root     root             0 Oct 16 11:08 [1;34mtmp[m
+drwxr-xr-x    4 root     root             0 Oct 16 11:08 [1;34musr[m
+/ # dmesg | grep init
+[    0.000000] Memory: 405356K/524288K available (12288K kernel code, 1618K rwdata, 4796K rodata, 2048K init, 394K bss, 53396K reserved, 65536K cma-reserved, 0K highmem)
+[    0.000000]       .init : 0x(ptrval) - 0x(ptrval)   (2048 kB)
+[    0.074682] devtmpfs: initialized
+[    0.104143] pinctrl core: initialized pinctrl subsystem
+[    0.239068] SCSI subsystem initialized
+[    0.379131] Trying to unpack rootfs image as initramfs...
+[    1.754115] Freeing initrd memory: 25140K
+[    1.903530] SuperH (H)SCI(F) driver initialized
+[    1.904954] msm_serial: driver initialized
+[    1.905277] STMicroelectronics ASC driver initialized
+[    1.906402] STM32 USART driver initialized
+[    2.174439] Run /init as init process
+/ # busybox --help | head -15
+BusyBox v1.31.1 (2026-10-16 11:08:14 UTC) multi-call binary.
+BusyBox is copyrighted by many authors between 1998-2015.
+Licensed under GPLv2. See source distribution for detailed
+copyright notices.
+
+Usage: busybox [function [arguments]...]
+   or: busybox --list[-full]
+   or: busybox --show SCRIPT
+   or: busybox --install [-s] [DIR]
+   or: function [arguments]...
+
+	BusyBox is a multi-call binary that combines many common Unix
+	utilities into a single executable.  Most people will create a
+	link to busybox for each function they wish to use and BusyBox
+	will act like whatever it was invoked as.
+/ # poweroff
+/ # umount: can't unmount /: Invalid argument
+swapoff: can't open '/etc/fstab': No such file or directory
+The system is going down NOW!
+Sent SIGTERM to all processes
+Sent SIGKILL to all processes
+Requesting system poweroff
+[   60.494016] reboot: Power down
