@@ -161,9 +161,7 @@ module_exit(hello_exit);
 ```bash
 perl $KDIR/scripts/checkpatch.pl --no-tree -f hello/hello.c
 ```
-
-![alt text](image.png)
-
+<img width="1062" height="62" alt="image" src="https://github.com/user-attachments/assets/cee6625c-d4cf-4196-a776-0759738f0f5b" />
 
 ### 2.5. Збірка модуля
 
@@ -171,8 +169,7 @@ perl $KDIR/scripts/checkpatch.pl --no-tree -f hello/hello.c
 make -C hello
 ```
 
-![alt text](image-1.png)
-
+<img width="1112" height="442" alt="image-1" src="https://github.com/user-attachments/assets/7e158531-a718-4f5c-8905-767f77c2f856" />
 
 ### 2.6. запуск у QEMU
 
@@ -220,21 +217,21 @@ run_case count=11
 
 ### 3.1. modinfo
 
-![alt text](image-2.png)
+<img width="947" height="211" alt="image-2" src="https://github.com/user-attachments/assets/b8431ba9-6c3f-46df-8ca0-418422e9d206" />
 
 ### 3.2. Запуск: без параметра (значення за замовчуванням)
 
-![alt text](image-3.png)
+<img width="881" height="305" alt="image-3" src="https://github.com/user-attachments/assets/84ca42fb-d8a0-4e20-9476-561f85e52bb8" />
 
 ### 3.3. Запуск:  bash /project/build.sh test
 
-![alt text](image-4.png)
+<img width="707" height="951" alt="image-4" src="https://github.com/user-attachments/assets/b0ee30ee-2548-431f-aa2a-350b4e55ca82" />
 
-![alt text](image-6.png)
+<img width="658" height="906" alt="image-6" src="https://github.com/user-attachments/assets/000c6ad9-9679-48e7-9ccd-a8e2dc686036" />
 
-![alt text](image-7.png)
+<img width="962" height="955" alt="image-7" src="https://github.com/user-attachments/assets/274aeaa7-64aa-4f85-b684-d37c65f1c07e" />
 
-![alt text](image-8.png)
+<img width="736" height="115" alt="image-8" src="https://github.com/user-attachments/assets/9145b64a-c7db-46a1-bec1-1b27bf09e9df" />
 
 ## 4. Висновки
 
