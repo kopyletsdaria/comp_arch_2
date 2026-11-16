@@ -1,0 +1,20 @@
+name: lab_arm
+
+services:
+  lab5-arm-env:
+    image: ubuntu:24.04
+    platform: linux/amd64
+    container_name: lab5_Kopylets
+    tty: true
+    stdin_open: true
+    privileged: true
+    environment:
+      - DEBIAN_FRONTEND=noninteractive
+    volumes:
+      - .:/project
+      - work:/work
+    working_dir: /project
+    command: ["sleep", "infinity"]
+
+volumes:
+  work:

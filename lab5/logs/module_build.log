@@ -1,0 +1,17 @@
+make: Entering directory '/project/hello'
+make -C /work/src/linux-stable M=$PWD
+make[1]: Entering directory '/work/src/linux-stable'
+  CC [M]  /project/hello/hello1.o
+  CC [M]  /project/hello/hello2.o
+  Building modules, stage 2.
+make[2]: Warning: File '/project/hello/hello1.o' has modification time 0.58 s in the future
+  MODPOST 2 modules
+  CC      /project/hello/hello1.mod.o
+  LD [M]  /project/hello/hello1.ko
+  CC      /project/hello/hello2.mod.o
+  LD [M]  /project/hello/hello2.ko
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory '/work/src/linux-stable'
+make: Leaving directory '/project/hello'
+/project/hello/hello1.ko: ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), BuildID[sha1]=b6d3e404e3092db5de61a2adbf896afe34957adc, not stripped
+/project/hello/hello2.ko: ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), BuildID[sha1]=3ff9d6d1c1933f064067fe26a58831cc4201f771, not stripped
